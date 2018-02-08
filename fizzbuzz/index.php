@@ -3,4 +3,7 @@
 
     use David\FizzBuzz;
 
-    $calculator = new FizzBuzz();
+    $fizzbuzzer = new FizzBuzz(100);// fizzbuzz until 100
+    foreach ($fizzbuzzer->run() as $number) {
+        echo $number . PHP_EOL;
+    }
